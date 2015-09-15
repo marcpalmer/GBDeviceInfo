@@ -2,8 +2,10 @@
 // Prefix header for all source files of the 'GBDeviceInfo' target in the 'GBDeviceInfo' project
 //
 
+#include <TargetConditionals.h>
+
 #ifdef __OBJC__
-    #if IPHONE
+    #if TARGET_OS_IPHONE
         #import <Foundation/Foundation.h>
         #import <UIKit/UIKit.h>
     #else

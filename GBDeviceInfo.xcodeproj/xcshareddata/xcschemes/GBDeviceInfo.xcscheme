@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0710"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8A1B118C16F21F2E00BDDD2A"
+               BlueprintIdentifier = "49E903221BA8672600903A84"
                BuildableName = "GBDeviceInfo.framework"
-               BlueprintName = "GBDeviceInfo-OSX"
+               BlueprintName = "GBDeviceInfo"
                ReferencedContainer = "container:GBDeviceInfo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8A1B118C16F21F2E00BDDD2A"
+            BlueprintIdentifier = "49E903221BA8672600903A84"
             BuildableName = "GBDeviceInfo.framework"
-            BlueprintName = "GBDeviceInfo-OSX"
+            BlueprintName = "GBDeviceInfo"
             ReferencedContainer = "container:GBDeviceInfo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "49E903221BA8672600903A84"
+            BuildableName = "GBDeviceInfo.framework"
+            BlueprintName = "GBDeviceInfo"
+            ReferencedContainer = "container:GBDeviceInfo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
