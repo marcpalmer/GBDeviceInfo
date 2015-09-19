@@ -47,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		49E06A041BAD7657005E98CC /* ios-framework.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "ios-framework.modulemap"; sourceTree = "<group>"; };
 		49E903231BA8672600903A84 /* GBDeviceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBDeviceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E903251BA8672600903A84 /* GBDeviceInfo-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBDeviceInfo-iOS.h"; sourceTree = "<group>"; };
 		49E903271BA8672600903A84 /* GBDeviceInfo-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GBDeviceInfo-iOS-Info.plist"; sourceTree = "<group>"; };
@@ -102,12 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49E903241BA8672600903A84 /* GBDeviceInfo */ = {
+		49E903241BA8672600903A84 /* GBDeviceInfo Dynamic Framework */ = {
 			isa = PBXGroup;
 			children = (
 				49E903251BA8672600903A84 /* GBDeviceInfo-iOS.h */,
 				49E903271BA8672600903A84 /* GBDeviceInfo-iOS-Info.plist */,
+				49E06A041BAD7657005E98CC /* ios-framework.modulemap */,
 			);
+			name = "GBDeviceInfo Dynamic Framework";
 			path = GBDeviceInfo;
 			sourceTree = "<group>";
 		};
@@ -143,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				8A38F598162DA1C100BCF240 /* GBDeviceInfo */,
-				49E903241BA8672600903A84 /* GBDeviceInfo */,
+				49E903241BA8672600903A84 /* GBDeviceInfo Dynamic Framework */,
 				8A38F595162DA1C100BCF240 /* Frameworks */,
 				8A38F594162DA1C100BCF240 /* Products */,
 				49E9034B1BA86BB800903A84 /* GBDeviceInfo copy-Info.plist */,
@@ -402,6 +405,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(SRCROOT)/GBDeviceInfo/ios-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goonbee.GBDeviceInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +448,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(SRCROOT)/GBDeviceInfo/ios-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goonbee.GBDeviceInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -607,6 +612,7 @@
 				49E903291BA8672600903A84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A1B11A016F21F2E00BDDD2A /* Build configuration list for PBXNativeTarget "GBDeviceInfo-OSX" */ = {
 			isa = XCConfigurationList;
