@@ -1,0 +1,6 @@
+framework module GBDeviceInfo {
+  umbrella header "GBDeviceInfo-iOS.h"
+
+  export *
+  module * { export * }
+}
