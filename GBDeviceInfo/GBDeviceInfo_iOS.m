@@ -324,9 +324,9 @@
     NSInteger patchVersion = 0;
     
     NSArray *decomposedOSVersion = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."];
-    if (decomposedOSVersion.count > 0) majorVersion = [decomposedOSVersion[0] integerValue];
-    if (decomposedOSVersion.count > 1) minorVersion = [decomposedOSVersion[1] integerValue];
-    if (decomposedOSVersion.count > 2) patchVersion = [decomposedOSVersion[2] integerValue];
+    if (decomposedOSVersion.count > 0) majorVersion = [decomposedOSVersion[0] unsignedIntegerValue];
+    if (decomposedOSVersion.count > 1) minorVersion = [decomposedOSVersion[1] unsignedIntegerValue];
+    if (decomposedOSVersion.count > 2) patchVersion = [decomposedOSVersion[2] unsignedIntegerValue];
     
     return GBOSVersionMake(majorVersion, minorVersion, patchVersion);
 }
